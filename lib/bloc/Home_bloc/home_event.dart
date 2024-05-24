@@ -9,7 +9,7 @@ sealed class HomeEvent extends Equatable {
 }
 
 class SelectedBrandEvent extends HomeEvent {
-  String? selectedBrand;
-  SelectedBrandEvent({this.selectedBrand});
+ final String? selectedBrand;
+ const SelectedBrandEvent({this.selectedBrand});
 }
 class LoadShoesEvent extends HomeEvent {}

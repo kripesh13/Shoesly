@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shoesly/bloc/Details_bloc/details_bloc.dart';
 import 'package:shoesly/bloc/Home_bloc/home_bloc.dart';
 import 'package:shoesly/routes/routes_name.dart';
 import 'package:shoesly/view/details/details_screen.dart';
@@ -20,10 +21,16 @@ class Routes {
         final data = settings.arguments as Map;
 
         return MaterialPageRoute(builder: (BuildContext context) {
-          return DetailsScreen(
-            image: data['image'],
-            name: data['name'],
-            size: data['size'],
+          return BlocProvider(
+            create: (context) => DetailsBloc()
+              ..add(OnSelectedSizeEvent(selectedSize: data['size'])),
+            child: DetailsScreen(
+              image: data['image'],
+              name: data['name'],
+              size: data['size'],
+              ratings: data['ratings'],
+              review: data['review'],
+            ),
           );
         });
 

@@ -6,7 +6,6 @@ import 'package:shoesly/model/shoe_brands.dart';
 import 'package:shoesly/model/shoes_model/shoes_moke_data.dart';
 
 import '../../model/shoes_model/shoes_model.dart';
-import '../../utils/app_image.dart';
 
 part 'home_event.dart';
 
@@ -72,6 +71,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   return List.generate(count, (index) {
     int dataIndex = (start + index) % ShoesData.length; // Cycle through ShoesData
     return Shoes(
+      ratings: ShoesData[dataIndex].ratings,
+      review:ShoesData[dataIndex].review ,
       brand: ShoesData[dataIndex].brand,
       model: ShoesData[dataIndex].model,
       price: ShoesData[dataIndex].price,

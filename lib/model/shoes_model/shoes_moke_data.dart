@@ -1,5 +1,6 @@
+
+import 'package:shoesly/model/shoes_model/shoes_model.dart';
 import 'package:shoesly/utils/app_image.dart';
-import 'shoes_model.dart';
 
 final List<Shoes> ShoesData = [
   Shoes(
@@ -8,6 +9,8 @@ final List<Shoes> ShoesData = [
       price: 150.0,
       color: 'Red',
       size: '10',
+      ratings: 4.2,
+      review: ['Perfect for keeping your feet dry and warm in damp conditions. ', 'Classic Stylish look Perfect for keeping your feet dry and warm in damp conditions. ', 'Good cushioning'],
       imageUrl: AppImage().nike),
   Shoes(
       brand: 'Nike',
@@ -15,6 +18,8 @@ final List<Shoes> ShoesData = [
       price: 120.0,
       color: 'White',
       size: '9',
+      ratings: 3.7,
+      review: ['Classic design', 'Durable', 'Versatile'],
       imageUrl: AppImage().adidas),
   Shoes(
       brand: 'Adidas',
@@ -22,6 +27,8 @@ final List<Shoes> ShoesData = [
       price: 180.0,
       color: 'Black',
       size: '9',
+      ratings: 3.5,
+      review: ['Extremely Perfect for keeping your feet dry and warm in damp conditions. ', 'Great support', 'Classic Stylish look Perfect for keeping your feet dry and warm in damp conditions. '],
       imageUrl: AppImage().puma),
   Shoes(
       brand: 'Adidas',
@@ -29,6 +36,8 @@ final List<Shoes> ShoesData = [
       price: 140.0,
       color: 'Blue',
       size: '10',
+      ratings: 3.5,
+      review: ['Perfect for keeping your feet dry and warm in damp conditions. ', 'Lightweight', 'Classic Stylish look Perfect for keeping your feet dry and warm in damp conditions. '],
       imageUrl: AppImage().newBalance),
   Shoes(
       brand: 'Puma',
@@ -36,6 +45,8 @@ final List<Shoes> ShoesData = [
       price: 110.0,
       color: 'Green',
       size: '8',
+      ratings: 3.5,
+      review: ['Unique design', 'Perfect for keeping your feet dry and warm in damp conditions. ', 'Good value'],
       imageUrl: AppImage().shoes),
   Shoes(
       brand: 'Puma',
@@ -43,6 +54,8 @@ final List<Shoes> ShoesData = [
       price: 70.0,
       color: 'Black',
       size: '9',
+      ratings: 3.5,
+      review: ['Classic look Perfect for keeping your feet dry and warm in damp conditions.  Perfect for keeping your feet dry and warm in damp conditions. ', 'Perfect for keeping your feet dry and warm in damp conditions. ', 'Perfect for keeping your feet dry and warm in damp conditions. '],
       imageUrl: AppImage().puma),
   Shoes(
       brand: 'Reebok',
@@ -50,6 +63,8 @@ final List<Shoes> ShoesData = [
       price: 75.0,
       color: 'White',
       size: '10',
+      ratings: 3.1,
+      review: ['Perfect for keeping your feet dry and warm in damp conditions. ', 'Retro style', 'Good quality'],
       imageUrl: AppImage().adidas),
   Shoes(
       brand: 'Reebok',
@@ -57,6 +72,8 @@ final List<Shoes> ShoesData = [
       price: 130.0,
       color: 'Grey',
       size: '11',
+      ratings: 4.3,
+      review: ['Great for training', 'Supportive', 'Perfect for keeping your feet dry and warm in damp conditions. '],
       imageUrl: AppImage().puma),
   Shoes(
       brand: 'New Balance',
@@ -64,6 +81,8 @@ final List<Shoes> ShoesData = [
       price: 175.0,
       color: 'Grey',
       size: '10',
+      ratings: 3.9,
+      review: ['Classic Stylish look for Excellent quality Perfect for keeping your feet dry and warm in damp conditions. ', 'Very Perfect for keeping your feet dry and warm in damp conditions. ', 'Supportive'],
       imageUrl: AppImage().newBalance),
   Shoes(
       brand: 'New Balance',
@@ -71,6 +90,8 @@ final List<Shoes> ShoesData = [
       price: 80.0,
       color: 'Navy',
       size: '9',
+      ratings: 4.2,
+      review: ['Perfect for keeping your feet dry and warm in damp conditions. ', 'Classic style', 'Good value'],
       imageUrl: AppImage().puma),
   Shoes(
       brand: 'Nike',
@@ -78,6 +99,8 @@ final List<Shoes> ShoesData = [
       price: 100.0,
       color: 'Black',
       size: '11',
+      ratings: 4.6,
+      review: ['Classic Stylish look Perfect for keeping your feet dry and warm in damp conditions. ', 'Perfect for keeping your feet dry and warm in damp conditions. ', 'Durable'],
       imageUrl: AppImage().adidas),
   Shoes(
       brand: 'Nike',
@@ -85,6 +108,8 @@ final List<Shoes> ShoesData = [
       price: 130.0,
       color: 'White',
       size: '10',
+      ratings: 4.7,
+      review: ['Perfect for keeping your feet dry and warm in damp conditions. ', 'Modern design', 'Great for running'],
       imageUrl: AppImage().puma),
   Shoes(
       brand: 'Adidas',
@@ -92,6 +117,8 @@ final List<Shoes> ShoesData = [
       price: 85.0,
       color: 'White',
       size: '8',
+      ratings: 4.0,
+      review: ['Classic look Perfect for keeping your feet dry and warm in damp conditions.  Perfect for keeping your feet dry and warm in damp conditions. ', 'Durable', 'Perfect for keeping your feet dry and warm in damp conditions. '],
       imageUrl: AppImage().newBalance),
   Shoes(
       brand: 'Adidas',
@@ -99,6 +126,8 @@ final List<Shoes> ShoesData = [
       price: 90.0,
       color: 'Green',
       size: '9',
+      ratings: 4.3,
+      review: ['Timeless design', 'Perfect for keeping your feet dry and warm in damp conditions. ', 'Versatile'],
       imageUrl: AppImage().puma),
   Shoes(
       brand: 'Puma',
@@ -106,6 +135,8 @@ final List<Shoes> ShoesData = [
       price: 75.0,
       color: 'Pink',
       size: '7',
+      ratings: 4.1,
+      review: ['Classic Stylish look Perfect for keeping your feet dry and warm in damp conditions. ', 'Perfect for keeping your feet dry and warm in damp conditions. ', 'Good value'],
       imageUrl: AppImage().adidas),
   Shoes(
       brand: 'Puma',
@@ -113,6 +144,8 @@ final List<Shoes> ShoesData = [
       price: 80.0,
       color: 'Blue',
       size: '8',
+      ratings: 4.0,
+      review: ['Retro design', 'Perfect for keeping your feet dry and warm in damp conditions. ', 'Perfect for keeping your feet dry and warm in damp conditions. '],
       imageUrl: AppImage().newBalance),
   Shoes(
       brand: 'Reebok',
@@ -120,6 +153,8 @@ final List<Shoes> ShoesData = [
       price: 120.0,
       color: 'Orange',
       size: '10',
+      ratings: 4.4,
+      review: ['Unique design', 'Perfect for keeping your feet dry and warm in damp conditions. ', 'Good for running'],
       imageUrl: AppImage().puma),
   Shoes(
       brand: 'Reebok',
@@ -127,6 +162,8 @@ final List<Shoes> ShoesData = [
       price: 75.0,
       color: 'Black',
       size: '9',
+      ratings: 4.2,
+      review: ['Classic look Perfect for keeping your feet dry and warm in damp conditions.  Perfect for keeping your feet dry and warm in damp conditions. ', 'Perfect for keeping your feet dry and warm in damp conditions. ', 'Durable'],
       imageUrl: AppImage().adidas),
   Shoes(
       brand: 'New Balance',
@@ -134,6 +171,8 @@ final List<Shoes> ShoesData = [
       price: 150.0,
       color: 'Blue',
       size: '10',
+      ratings: 4.8,
+      review: ['Very Perfect for keeping your feet dry and warm in damp conditions. ', 'Great support', 'Excellent for running'],
       imageUrl: AppImage().newBalance),
   Shoes(
       brand: 'New Balance',
@@ -141,6 +180,8 @@ final List<Shoes> ShoesData = [
       price: 130.0,
       color: 'Yellow',
       size: '11',
+      ratings: 4.7,
+      review: ['Lightweight', 'Great for running', 'Perfect for keeping your feet dry and warm in damp conditions. '],
       imageUrl: AppImage().puma),
   Shoes(
       brand: 'Nike',
@@ -148,6 +189,8 @@ final List<Shoes> ShoesData = [
       price: 250.0,
       color: 'Orange',
       size: '10',
+      ratings: 3.9,
+      review: ['High performance', 'Very Perfect for keeping your feet dry and warm in damp conditions. ', 'Excellent for marathons'],
       imageUrl: AppImage().adidas),
   Shoes(
       brand: 'Nike',
@@ -155,6 +198,8 @@ final List<Shoes> ShoesData = [
       price: 130.0,
       color: 'Green',
       size: '9',
+      ratings: 4.0,
+      review: ['Great for trails', 'Perfect for keeping your feet dry and warm in damp conditions. ', 'Durable'],
       imageUrl: AppImage().puma),
   Shoes(
       brand: 'Adidas',
@@ -162,6 +207,8 @@ final List<Shoes> ShoesData = [
       price: 120.0,
       color: 'Black',
       size: '10',
+      ratings: 4.4,
+      review: ['Great for hiking', 'Perfect for keeping your feet dry and warm in damp conditions. ', 'Durable'],
       imageUrl: AppImage().newBalance),
   Shoes(
       brand: 'Adidas',
@@ -169,6 +216,8 @@ final List<Shoes> ShoesData = [
       price: 140.0,
       color: 'White',
       size: '8',
+      ratings: 4.3,
+      review: ['Perfect for keeping your feet dry and warm in damp conditions. ', 'Great for running', 'Supportive'],
       imageUrl: AppImage().puma),
   Shoes(
       brand: 'Puma',
@@ -176,6 +225,8 @@ final List<Shoes> ShoesData = [
       price: 65.0,
       color: 'Black',
       size: '9',
+      ratings: 4.1,
+      review: ['Good value', 'Perfect for keeping your feet dry and warm in damp conditions. ', 'Classic Stylish look Perfect for keeping your feet dry and warm in damp conditions. '],
       imageUrl: AppImage().adidas),
   Shoes(
       brand: 'Puma',
@@ -183,6 +234,8 @@ final List<Shoes> ShoesData = [
       price: 75.0,
       color: 'Red',
       size: '10',
+      ratings: 4.2,
+      review: ['Perfect for keeping your feet dry and warm in damp conditions. ', 'Good value', 'Classic Stylish look Perfect for keeping your feet dry and warm in damp conditions. '],
       imageUrl: AppImage().puma),
   Shoes(
       brand: 'Reebok',
@@ -190,6 +243,8 @@ final List<Shoes> ShoesData = [
       price: 150.0,
       color: 'Blue',
       size: '11',
+      ratings: 4.7,
+      review: ['Great for running', 'Very Perfect for keeping your feet dry and warm in damp conditions. ', 'Supportive'],
       imageUrl: AppImage().newBalance),
   Shoes(
       brand: 'Reebok',
@@ -197,6 +252,7 @@ final List<Shoes> ShoesData = [
       price: 70.0,
       color: 'Grey',
       size: '8',
-      imageUrl: AppImage().puma
-  ),
+      ratings: 3.5,
+      review: ['Perfect for keeping your feet dry and warm in damp conditions. ', 'Perfect for keeping your feet dry and warm in damp conditions. ', 'Good for walking'],
+      imageUrl: AppImage().puma),
 ];

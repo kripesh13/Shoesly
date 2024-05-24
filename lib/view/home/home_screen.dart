@@ -37,12 +37,13 @@ class HomeScreen extends StatelessWidget {
                               .add(SelectedBrandEvent(selectedBrand: e));
                         },
                         child: Container(
-                          padding: EdgeInsets.fromLTRB(0, 5, 10, 5),
+                          padding: EdgeInsets.fromLTRB(0, 5, 15, 5),
                           child: Text(
                             e,
                             style: state.selectedBrand == e
                                 ? kkBoldTextStyle()
-                                : kkBoldTextStyle().copyWith(color: greyColor),
+                                : kkBoldTextStyle()
+                                    .copyWith(color: Colors.grey[500]),
                           ),
                         ),
                       );
@@ -83,12 +84,15 @@ class HomeScreen extends StatelessWidget {
                               onTap: () {
                                 Navigator.pushNamed(context, RoutesName.details,
                                     arguments: {
-                                      'name': item.model,
+                                      'name': '${item.brand} ${item.model}',
                                       'image': item.imageUrl,
                                       'size': item.size,
+                                      'ratings': item.ratings,
+                                      'review': item.review,
                                     });
                               },
                               child: ShoesTiles(
+                                ratings: item.ratings,
                                 brand: item.brand,
                                 model: item.model,
                                 price: item.price,
@@ -107,23 +111,29 @@ class HomeScreen extends StatelessWidget {
       ),
       floatingActionButton: Container(
         padding: kPadding(),
-        width:100,
+        width: 100,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: darkGrey,
-      
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/icons/filter.png',height: 20,width: 20,),
+            Image.asset(
+              'assets/icons/filter.png',
+              height: 20,
+              width: 20,
+            ),
             maxWidthSpan(),
-            Text('Filter',style: kkBoldTextStyle().copyWith(color: whiteColor),)
+            Text(
+              'Filter',
+              style: kkBoldTextStyle().copyWith(color: whiteColor),
+            )
           ],
         ),
       ),
-            floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }

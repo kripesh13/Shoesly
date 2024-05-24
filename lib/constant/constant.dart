@@ -239,7 +239,7 @@ Color secondaryColor = Color(0xFF58A854).withOpacity(0.96);
 
 Color blueColor = Color(0xff1A469D);
 Color darkGrey = Color.fromARGB(255, 14, 14, 15);
-Color greyColor = Color.fromARGB(255, 219, 218, 218);
+Color greyColor = Color.fromARGB(40, 16, 16, 16);
 Color yellowColor = Color(0xffFFCF01);
 Color errorColor = Colors.red;
 Color whiteColor = Colors.white;

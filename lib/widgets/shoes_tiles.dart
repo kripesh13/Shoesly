@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:shoesly/constant/ui_helpers.dart';
 
 import '../constant/constant.dart';
@@ -11,6 +12,7 @@ class ShoesTiles extends StatelessWidget {
   final String color;
   final String size;
   final String imageUrl;
+  final double ratings;
 
   ShoesTiles(
       {required this.brand,
@@ -19,6 +21,7 @@ class ShoesTiles extends StatelessWidget {
       required this.color,
       required this.size,
       required this.imageUrl,
+      required this.ratings,
       super.key});
 
   @override
@@ -36,10 +39,13 @@ class ShoesTiles extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   _getBrandLogo(brand),
-                  Image.asset(
-                    imageUrl,
-                    height: 130,
-                    width: 150,
+                  Hero(
+                    tag: '$imageUrl$brand',
+                    child: Image.asset(
+                      imageUrl,
+                      height: 130,
+                      width: 150,
+                    ),
                   ),
                 ],
               )),
@@ -58,7 +64,7 @@ class ShoesTiles extends StatelessWidget {
               ),
               minWidthSpan(),
               Text(
-                '4.5',
+                ratings.toString(),
                 style: kkBoldTextStyle(),
               ),
               maxWidthSpan(),
@@ -78,6 +84,8 @@ class ShoesTiles extends StatelessWidget {
     );
   }
 }
+
+
 
 _getBrandLogo(String brand) {
   switch (brand) {
